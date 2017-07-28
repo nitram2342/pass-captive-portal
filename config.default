@@ -1,0 +1,11 @@
+# Your WiFi device name
+DEVICE=wlp4s0
+
+# Webserver to check
+URL_TO_TEST=http://www.modzero.ch
+EXPECTED_STR="in-depth it security"
+
+# Here might go other settings
+ROOM_NR=101
+NAME=Winston
+
