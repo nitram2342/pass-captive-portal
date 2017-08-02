@@ -37,10 +37,10 @@ echo "+ Current SSID is: $CURRENT_SSID"
 
 # check if WiFi network is known
 if [ "$CURRENT_SSID" = "WIFIonICE" ] ; then
-    echo "+ Lauch script"
+    echo "+ Launch script"
     $SCRIPT_DIR/wifionice.sh
 elif [ "$CURRENT_SSID" = "FREE MEE" ] ; then
-    echo "+ Lauch script"
+    echo "+ Launch script"
     $SCRIPT_DIR/free_mee.sh $DEVICE $MAC_ADDRESS
 else
     echo "+ Unkown SSID, will be ignored"
