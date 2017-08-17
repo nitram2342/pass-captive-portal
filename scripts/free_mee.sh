@@ -5,7 +5,7 @@
 
 WLAN_IF="wlp3s0"
 OUTPUT="/dev/null"
-#OPTS="-k -x 127.0.0.1:8080"
+#OPTS="-k -x 127.0.0.1:8080" # use proxy and ignore certificate errors
 COOKIE_JAR="~/.cookie-jar.txt"
 
 echo "Send request to get captive portal"
@@ -19,5 +19,3 @@ curl $OPTS --silent --output $OUTPUT --cookie "AGB_TOS_FREEMEE=1" -L --data "mac
 
 echo "send key to unlock Internet"
 curl $OPTS --silent --output $OUTPUT -b $COOKIE_JAR -L "http://n193.network-auth.com/splash/grant?acceptedAGB=1&acceptedTOS=1"
-
-rm $COOKIE_JAR
