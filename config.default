@@ -2,8 +2,10 @@
 DEVICE=wlp4s0
 
 # Webserver to check
-URL_TO_TEST=http://www.modzero.ch
-EXPECTED_STR="in-depth it security"
+# We prefer a clear text version, because sometimes SSL/TLS traffic is not
+# redirected, while clear text is.
+URL_TO_TEST=http://www.ccc.de
+EXPECTED_STR="Chaos Computer Club e. V."
 
 # Here might go other settings
 ROOM_NR=101
